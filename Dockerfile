@@ -4,7 +4,7 @@
 # TO_RUN:		docker run -d --publish 80:80 --volume /tmp/wpt/results:/var/www/html/results webpagetest
 
 FROM centos:centos6
-MAINTAINER Yunkyung Lee <yunkyung@gmail.com>
+MAINTAINER Dominic McGinnis <dominic_mcginnis@yahoo.com>
 
 # for httpd, php 
 RUN yum install -y httpd
