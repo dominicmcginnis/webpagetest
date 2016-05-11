@@ -5,8 +5,8 @@ BASENAME=`basename $0`
 set_env() 
 {
 	if [ -z "$WPT_IMAGE_NAME" ]; then 
-		echo "need to set WPT_IMAGE_NAME env value or default WPT_IMAGE_NAME=webpagetest-2.18"
-		export WPT_IMAGE_NAME=webpagetest-2.18
+		echo "need to set WPT_IMAGE_NAME env value or default WPT_IMAGE_NAME=webpagetest-2.19"
+		export WPT_IMAGE_NAME=webpagetest-2.19
 	fi
 	if [ -z "$WPT_NAME" ]; then
 		echo "need to set WPT_NAME env value or default WPT_IMAGE=wpt"
@@ -24,12 +24,12 @@ usage()
 	Usage: $BASENAME param param ..
 		param:
 		- build : webpagetest docker image build
-	 		export WPT_IMAGE_NAME=webpagetest-2.18 
+	 		export WPT_IMAGE_NAME=webpagetest-2.19
 			./wptctl build
 		- start	: webpagetest container start
 			export WPT_NAME=my_wpt 
 			export WPT_RESULTS_VOLUME='/tmp/my/result' 
-			export WPT_IMAGE_NAME=webpagetest-2.18
+			export WPT_IMAGE_NAME=webpagetest-2.19
 			./wptctl start
 		- stop name : webpagetest container stop
 		- restart name: webpagetest container restart 
